@@ -60,7 +60,7 @@ const deleteUsers = async (req, res = response) => {
     { state: false },
     { new: true }
   );
-
+  const authUser = req.user;
   res.json(user);
 };
 
